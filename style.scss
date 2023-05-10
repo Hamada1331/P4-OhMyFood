@@ -70,6 +70,7 @@ nav {
 
     .btn__radius{
         display: flex;
+        width: 100%;
         align-items: center;
         flex-wrap: wrap;
         background-color: #f6f6f6;
@@ -104,16 +105,14 @@ nav {
 }
 
 .functions{
-    padding: 20px;
+    max-width: 1200px;
+    padding: 20px ;
+    margin: auto;
 }
 
 .Restaurants{
     background-color: #f6f6f6;
     padding: 20px;
-   
-    h2{
-        margin-left: 100px;
-    }
 
     
 
@@ -213,21 +212,23 @@ footer{
     
 
     .functions{
-
         .btn{
             display: flex;
             gap: 37px;
-            justify-content: center;
         }    
 
         h2{
             margin-bottom: 25px;
-            margin-left: 100px;
         }
     }
 
     
     .Restaurants{
+        .container{
+            max-width: 1200px;
+            padding: 20px;
+            margin: auto;
+        }
         .content-restaurant{
             display: flex;
             flex-wrap: wrap;

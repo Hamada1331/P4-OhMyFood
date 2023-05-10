@@ -61,6 +61,7 @@ nav img {
 
 .btn .btn__radius {
   display: flex;
+  width: 100%;
   align-items: center;
   flex-wrap: wrap;
   background-color: #f6f6f6;
@@ -90,7 +91,9 @@ nav img {
 }
 
 .functions {
+  max-width: 1200px;
   padding: 20px;
+  margin: auto;
 }
 
 .Restaurants {
@@ -177,11 +180,14 @@ footer p {
   .functions .btn {
     display: flex;
     gap: 37px;
-    justify-content: center;
   }
   .functions h2 {
     margin-bottom: 25px;
-    margin-left: 60px;
+  }
+  .Restaurants .container {
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto;
   }
   .Restaurants .content-restaurant {
     display: flex;
