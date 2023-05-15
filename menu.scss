@@ -23,9 +23,6 @@ nav{
         left: 20px;
     }
 }
-
-
-
     .menus{ 
         padding: 13px;
         position: relative;
@@ -154,6 +151,22 @@ nav{
 
 @media (min-width:768px) {
 
+    .hello{
+        justify-content: center;
+        
+        h2{
+            font-family: 'Shrikhand', cursive;
+        }
+    }
+
+    nav img{
+        display: flex;
+        margin: auto;
+        width: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
     .title{
         width: 5%;
     }
@@ -163,16 +176,19 @@ nav{
         margin-left: auto;
         margin-right: auto;
     }
+
+    .menu-flex{
+        width: 50%;
+        margin: auto;
+
+    }
     
 }
 
-@media (min-width:1280px) {
-    .functions{
-        h2{
-            margin-left: 160px;
-        }
-    }
-  }
+.button p {
+    height:45px;
+    width: 15%;
+}
 
 @keyframes drop {
     from{
