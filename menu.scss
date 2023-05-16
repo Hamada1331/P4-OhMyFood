@@ -60,7 +60,8 @@ nav {
     }
 
     .fa-heart {
-        &:hover {
+        cursor: pointer;
+        &:active { 
             color: transparent;
             font-weight: 600;
             background: #ba62db;
@@ -83,6 +84,7 @@ nav {
 }
 
 .btn {
+    cursor: pointer;
     font-size: 13.5px;
     display: flex;
     justify-content: space-between;
@@ -96,7 +98,7 @@ nav {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     overflow: hidden;
 
-    &:hover {
+    &:active {
         .checkbox {
             margin-right: 0 !important;
         }
@@ -169,6 +171,24 @@ nav {
 
 
 @media (min-width:768px) {
+
+    .btn{
+        &:hover {
+            .checkbox {
+                margin-right: 0 !important;
+            }
+        }
+    }
+
+    .fa-heart {
+        &:hover{
+            color: transparent;
+            font-weight: 600;
+            background: #ba62db;
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+    }
 
     .hello {
         font-size: 23px;

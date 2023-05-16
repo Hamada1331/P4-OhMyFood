@@ -19,12 +19,10 @@ nav {
   justify-content: center;
   position: relative;
 }
-
 nav a {
   text-decoration: none;
   color: black;
 }
-
 nav .fleche {
   position: absolute;
   left: 20px;
@@ -38,29 +36,26 @@ nav .fleche {
   border-radius: 40px 40px 0px 0px;
   overflow: hidden;
 }
-
 .menus h1 {
   font-family: "Shrikhand", cursive;
 }
-
-.menus>section {
+.menus > section {
   animation-duration: 2s;
   animation-name: drop;
 }
-
-.menus>section:first-child {
+.menus > section:first-child {
   animation-duration: 1s;
 }
-
-.menus>section:nth-child(2) {
+.menus > section:nth-child(2) {
   animation-duration: 2s;
 }
-
-.menus>section:last-child {
+.menus > section:last-child {
   animation-duration: 3s;
 }
-
-.menus .fa-heart:hover {
+.menus .fa-heart {
+  cursor: pointer;
+}
+.menus .fa-heart:active {
   color: transparent;
   font-weight: 600;
   background: #ba62db;
@@ -80,6 +75,7 @@ nav .fleche {
 }
 
 .btn {
+  cursor: pointer;
   font-size: 13.5px;
   display: flex;
   justify-content: space-between;
@@ -93,26 +89,21 @@ nav .fleche {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   overflow: hidden;
 }
-
-.btn:hover .checkbox {
+.btn:active .checkbox {
   margin-right: 0 !important;
 }
-
 .btn .texte {
   padding: 10px;
 }
-
 .btn .space {
   display: flex;
 }
-
 .btn .space .price {
   margin-right: 15px;
   display: flex;
   align-items: end;
   margin-bottom: 10px;
 }
-
 .btn .space .checkbox {
   background: #99E2D0;
   color: white;
@@ -130,7 +121,6 @@ nav .fleche {
   padding-right: 10px;
   align-items: center;
 }
-
 .hello h2 {
   font-family: "Shrikhand", cursive;
 }
@@ -162,52 +152,54 @@ nav .fleche {
 }
 
 @media (min-width: 768px) {
+  .btn:hover .checkbox {
+    margin-right: 0 !important;
+  }
+  .fa-heart:hover {
+    color: transparent;
+    font-weight: 600;
+    background: #ba62db;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
   .hello {
     font-size: 23px;
     gap: 50px;
     justify-content: center;
     padding-top: 50px;
   }
-
   nav img {
     display: flex;
     margin: auto;
     width: 50%;
   }
-
   .title {
     width: 5%;
   }
-
   .menus {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
-
   .menu-flex {
     width: 50%;
     margin: auto;
   }
-
   .flex {
     width: 65%;
     margin: auto;
   }
-
   .button p {
     height: 45px;
     width: 15%;
   }
 }
-
 @keyframes drop {
   from {
     top: -70px;
     position: relative;
     opacity: 0;
   }
-
   to {
     top: 0;
     position: relative;
