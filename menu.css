@@ -12,12 +12,19 @@ body {
 }
 
 nav {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: center;
   margin: auto;
   justify-content: center;
   position: relative;
 }
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
 nav .fleche {
   position: absolute;
   left: 20px;
@@ -31,22 +38,28 @@ nav .fleche {
   border-radius: 40px 40px 0px 0px;
   overflow: hidden;
 }
+
 .menus h1 {
   font-family: "Shrikhand", cursive;
 }
-.menus > section {
+
+.menus>section {
   animation-duration: 2s;
   animation-name: drop;
 }
-.menus > section:first-child {
+
+.menus>section:first-child {
   animation-duration: 1s;
 }
-.menus > section:nth-child(2) {
+
+.menus>section:nth-child(2) {
   animation-duration: 2s;
 }
-.menus > section:last-child {
+
+.menus>section:last-child {
   animation-duration: 3s;
 }
+
 .menus .fa-heart:hover {
   color: transparent;
   font-weight: 600;
@@ -58,7 +71,7 @@ nav .fleche {
 .title {
   border-bottom: 3px solid #99e2d0;
   width: 12%;
-  margin-bottom: 12px;
+  margin-top: 40px;
 }
 
 .Images {
@@ -67,6 +80,7 @@ nav .fleche {
 }
 
 .btn {
+  font-size: 13.5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,21 +93,26 @@ nav .fleche {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   overflow: hidden;
 }
+
 .btn:hover .checkbox {
   margin-right: 0 !important;
 }
+
 .btn .texte {
   padding: 10px;
 }
+
 .btn .space {
   display: flex;
 }
+
 .btn .space .price {
   margin-right: 15px;
   display: flex;
   align-items: end;
   margin-bottom: 10px;
 }
+
 .btn .space .checkbox {
   background: #99E2D0;
   color: white;
@@ -103,12 +122,17 @@ nav .fleche {
 }
 
 .hello {
+  font-size: 19px;
+  padding-top: 30px;
   display: flex;
-  gap: 50px;
-  font-size: 23px;
   justify-content: space-between;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   align-items: center;
+}
+
+.hello h2 {
+  font-family: "Shrikhand", cursive;
 }
 
 .button p {
@@ -139,34 +163,42 @@ nav .fleche {
 
 @media (min-width: 768px) {
   .hello {
+    font-size: 23px;
+    gap: 50px;
     justify-content: center;
+    padding-top: 50px;
   }
-  .hello h2 {
-    font-family: "Shrikhand", cursive;
-  }
+
   nav img {
     display: flex;
     margin: auto;
     width: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
+
   .title {
     width: 5%;
   }
+
   .menus {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
+
   .menu-flex {
     width: 50%;
     margin: auto;
   }
-}
-.button p {
-  height: 45px;
-  width: 15%;
+
+  .flex {
+    width: 65%;
+    margin: auto;
+  }
+
+  .button p {
+    height: 45px;
+    width: 15%;
+  }
 }
 
 @keyframes drop {
@@ -175,6 +207,7 @@ nav .fleche {
     position: relative;
     opacity: 0;
   }
+
   to {
     top: 0;
     position: relative;
