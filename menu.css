@@ -90,7 +90,14 @@ nav .fleche {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   overflow: hidden;
 }
-.btn:active .checkbox {
+.btn:hover .checkbox {
+  background: #99E2D0;
+  color: white;
+  padding: 21px;
+  margin-right: -58px;
+  transition: all ease-in-out 400ms;
+}
+.btn:hover .checkbox {
   margin-right: 0 !important;
 }
 
