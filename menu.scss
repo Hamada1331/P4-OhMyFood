@@ -83,8 +83,8 @@ nav {
     width: 100%;
 }
 
+
 .btn {
-    cursor: pointer;
     font-size: 13.5px;
     display: flex;
     justify-content: space-between;
@@ -97,8 +97,26 @@ nav {
     margin-bottom: 15px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     overflow: hidden;
+        &:before {
+            content: '';
+            background-color: aliceblue;
+            border-radius: 50%;
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: scale(0.001, 0.001);
+          }
+          &:focus {
+            outline: 0;
+            color: #fff;
+            &:before {
+              animation: effect_dylan 0.8s ease-out;
+            
 
-    &:active {
+            }
         .checkbox {
             margin-right: 0 !important;
         }
