@@ -77,18 +77,18 @@ nav .fleche {
 
 .btn {
   margin-top: 10px;
-  font-size: 13.5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   background-color: #fff;
   padding: 0;
   border-radius: 15px;
-  position: relative;
   margin-bottom: 15px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   overflow: hidden;
+}
+.btn:hover .texte {
+  max-width: calc(100% - 108px);
 }
 .btn:hover .checkbox {
   background: #99E2D0;
@@ -104,12 +104,17 @@ nav .fleche {
 .texte {
   padding: 10px;
 }
+.texte p, .texte h3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
 .space {
   display: flex;
 }
 .space .price {
-  margin-right: 15px;
+  padding-right: 15px;
   display: flex;
   align-items: end;
   margin-bottom: 10px;
