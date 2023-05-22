@@ -40,7 +40,7 @@ nav .fleche {
   font-family: "Shrikhand", cursive;
 }
 .menus > div {
-  animation-duration: 2s;
+  animation-duration: 4s;
   animation-name: drop;
 }
 .menus > div:first-child {
