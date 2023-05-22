@@ -42,27 +42,27 @@ nav {
         font-family: 'Shrikhand', cursive;
     }
 
-    &>section {
+    &>div {
         animation-duration: 2s;
         animation-name: drop;
 
         &:first-child {
-            animation-duration: 1s;
-        }
-
-        &:nth-child(2) {
             animation-duration: 2s;
         }
 
-        &:last-child {
+        &:nth-child(2) {
             animation-duration: 3s;
+        }
+
+        &:last-child {
+            animation-duration: 4s;
         }
     }
 
     .fa-heart {
         cursor: pointer;
 
-        &:active {
+        &:hover {
             color: transparent;
             font-weight: 600;
             background: #ba62db;
